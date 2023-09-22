@@ -1,0 +1,17 @@
+.nav-btn{
+    background-color: grey;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease; 
+    &:hover{
+        transform: translateY(-3px);
+    }
+}
+.form-button{
+    color:#fff;
+    background-color: #05bce4;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+   }

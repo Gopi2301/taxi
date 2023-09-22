@@ -1,0 +1,50 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 100px;
+  -webkit-box-shadow: 0px 9px 21px -1px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 9px 21px -1px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 9px 21px -1px rgba(0, 0, 0, 0.7);
+  color: white;
+}
+.nav {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  &__logo-wrapper {
+    max-width: 200px;
+    img {
+      max-width: 100px;
+      max-height: 100px;
+      width: auto;
+      height: auto;
+    }
+  }
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    &-item {
+      // Styles for the links item element
+      transition: color 0.3s ease; // Add a transition for smooth color change
+
+      &:hover {
+        color: transparent; // Set the text color to transparent
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(39, 46, 66, 1) 27%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+    }
+  }
+  &__button {
+    margin-left: 4rem;
+  }
+}
